@@ -140,3 +140,4 @@ C:\Users\MIS7\Desktop\ATS09.08.2017\ATS\ATS\bin\System.Web.Mvc.xml
 C:\Users\MIS7\Desktop\ATS09.08.2017\ATS\ATS\obj\Debug\ATS.csprojResolveAssemblyReference.cache
 C:\Users\MIS7\Desktop\ATS09.08.2017\ATS\ATS\obj\Debug\ATS.dll
 C:\Users\MIS7\Desktop\ATS09.08.2017\ATS\ATS\obj\Debug\ATS.pdb
+D:\Nasir\BITM Projects\ATS\ATS\bin\Microsoft.Web.Infrastructure.dll

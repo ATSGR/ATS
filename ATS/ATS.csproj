@@ -208,6 +208,7 @@
     <Content Include="Views\Shared\AssetEntry\_History.cshtml" />
     <Content Include="Views\CheekIn\Index.cshtml" />
     <Content Include="Views\AssetAudit\Index.cshtml" />
+    <Content Include="Views\AssetTypeSetup\Edit.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
