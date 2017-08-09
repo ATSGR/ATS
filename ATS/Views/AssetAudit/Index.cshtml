@@ -1,0 +1,140 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid">
+    <div class="panel panel-success" style="border-color: #64a1b9;">
+        <div class="panel-heading" style="background-color: #0c717d; ">
+            <h3 class="panel-title headtitle"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Cheek Audit</h3>
+        </div>
+        <div class="panel-body">
+            <h3>Asset To CheekIn</h3>
+            <br />
+            <table id="orgSetup" class="table table-striped table-hover table-bordered table-responsive" border="0" cellpadding="0" cellspacing="0">
+                <thead style="background-color:#cde6ca">
+                    <tr>
+                        <th>
+                            
+                        </th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                        <th>Cheekbox</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="checkbox" value=""></td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="checkbox" value=""></td>
+
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input type="checkbox" value="" data-toggle="modal" data-target="#myModal"></td>
+
+                    </tr>
+
+
+                </tbody>
+            </table>
+
+          
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Asset Audit List</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="form-group" ">
+
+                                <div class="checkbox">
+                                    <label for="printCheek" id="printCheekLabel" class="control-label col-md-3"><input id="printCheekbox" name="name" type="checkbox" value="">It's Asset OK?</label>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="form-group" ">
+
+                                <div class="checkbox">
+                                    <label for="printCheek" id="printCheekLabel" class="control-label col-md-4"><input id="printCheekbox" name="name" type="checkbox" value="">It's Asset On Location</label>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="form-group" ">
+
+                                <div class="checkbox">
+                                    <label for="printCheek" id="printCheekLabel" class="control-label col-md-5"><input id="printCheekbox" name="name" type="checkbox" value="">It's Asset Under Custodium</label>
+                                </div>
+
+
+
+
+                            </div>
+                            <div class="form-group">
+                                <label for="comments" id="commentsLabel" class="control-label col-md-2">Comments:</label>
+                                <textarea class="form-control " rows="2" id="commentsTextarea" style="width:400px;"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label col-md-2 " for="setLocation" id="setLocationLabel">Audit No :</label>
+                                <div class="col-md-4">
+                                    <select class="selectpicker form-control" id="ddlSetLocation" name="setLocation">
+                                        <option>---Select---</option>
+                                        <option>Computer</option>
+                                        <option>Printer</option>
+                                        <option>UPS</option>
+                                    </select>
+                                </div>
+                            </div>
+                            </fieldset>
+                        </form>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" id="saveBtn" name="saveBtn" value="Save " class="btn btn-group-lg btn-success" />
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
