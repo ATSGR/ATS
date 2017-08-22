@@ -1,0 +1,191 @@
+﻿
+
+@{
+    ViewBag.Title = "Search";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container-fluid">
+    <div class="panel panel-success" style="border-color: #64a1b9;">
+        <div class="panel-heading" style="background-color: #0c717d; ">
+            <h3 class="panel-title headtitle">@*<span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>*@Asset Entry Search</h3>
+        </div>
+        <div class="panel-body">
+
+
+
+
+
+            <form class="form-horizontal custom-form" role="form">
+                <fieldset>
+
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="control-label col-md-4 " for="location" id="locationLabel">Location :</label>
+                                <div class="col-md-4">
+                                    <select class="selectpicker form-control" id="ddlLocation" name="Location">
+                                        <option>---Select---</option>
+                                        <option>Laptop</option>
+                                        <option>Desktop</option>
+                                        <option>Tisshue</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-6">
+                                <label class="col-md-4 control-label" for="AssetName" id="assetNameLabel">Asset Name :</label>
+                                <div class="col-md-4">
+                                    <input id="assetNameTextbox" name="assetName" type="text" placeholder="Asset Name" class="form-control input-md" required />
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="col-md-4 control-label" for="brand" id="brandLabel">Brand:</label>
+                                <div class="col-md-4">
+                                    <input id="brandTextbox" name="brand" type="text" placeholder="Brand" class="form-control input-md" required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="col-md-4 control-label" for="assetType" id="assetTypeLabel">Asset Type:</label>
+                                <div class="col-md-4">
+                                    <select class="selectpicker form-control" id="ddlAssetType" name="assetType">
+                                        <option>---Select---</option>
+                                        <option>Laptop</option>
+                                        <option>Desktop</option>
+                                        <option>Tisshue</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="col-md-4 control-label" for="model" id="modelLabel">Model:</label>
+                                <div class="col-md-4">
+                                    <select class="selectpicker form-control" id="ddlModel" name="model">
+                                        <option>---Select---</option>
+                                        <option>Laptop</option>
+                                        <option>Desktop</option>
+                                        <option>Tisshue</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="col-md-4 control-label" for="serialNo" id="serialNoLabel">Serial No:</label>
+                                <div class="col-md-4">
+                                    <input id="serialNoTextbox" name="serialNo" type="text" placeholder="Serial No" class="form-control input-md" required />
+                                </div>
+                                <div class="col-md-1">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div style="text-align:right">
+                        <div class="col-md-offset-2 col-md-8">
+
+                            <button id="searchBtn" name="searchBtn" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+
+
+            <span>
+                <a href="@Url.Action("Index", new { @class = "btn btn-warning" })"><span class="glyphicon glyphicon-plus-sign"></span> Create New</a>
+            </span>
+            <div class="table-responsive">
+                <table id="assetEntrySearchTable" class="table table-striped table-hover table-bordered " border="0" cellpadding="0" cellspacing="0">
+                    <thead style="background-color:#cde6ca">
+                        <tr>
+                            <th>Location</th>
+                            <th>Brand</th>
+                            <th>Asset Name</th>
+                            <th>Model</th>
+                            <th>Serial No</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Dhaka</td>
+                            <td>Mogbazar</td>
+                            <td>Asset Name</td>
+                            <td>Basis_Mog</td>
+                            <td>09</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "", new { @class = "btn btn-primary btn-sm " })
+                                @Html.ActionLink("Detail", "Details", "", new { @class = "btn btn-warning btn-sm " })
+                                @Html.ActionLink("Delete", "Delete", "", new { @class = "btn btn-danger btn-sm " })
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Dhaka</td>
+                            <td>Rampura</td>
+                            <td>Mogbazar</td>
+                            <td>Basis_Ram</td>
+                            <td>10</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "", new { @class = "btn btn-primary btn-sm " })
+                                @Html.ActionLink("Detail", "Details", "", new { @class = "btn btn-warning btn-sm " })
+                                @Html.ActionLink("Delete", "Delete", "", new { @class = "btn btn-danger btn-sm " })
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Comilla</td>
+                            <td>Dharmasagor</td>
+                            <td>Mogbazar</td>
+                            <td>Basis_Com</td>
+                            <td>11</td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "", new { @class = "btn btn-primary btn-sm " })
+                                @Html.ActionLink("Detail", "Details", "", new { @class = "btn btn-warning btn-sm " })
+                                @Html.ActionLink("Delete", "Delete", "", new { @class = "btn btn-danger btn-sm " })
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+
+

@@ -268,21 +268,21 @@
                                 <ul class="nav nav-third-level">
                                     <li>
                                        
-                                        @Html.ActionLink("Asset Setup", "Index", "AssetTypeSetup")
+                                        @Html.ActionLink("Asset Setup", "Index", "AssetTypes")
                                     </li>
                                     <li>
                                         @*<a href="#">Asset Location Setup</a>*@
-                                        @Html.ActionLink("AssetLocation Setup", "Index", "AssetLocationSetup")
+                                        @Html.ActionLink("AssetLocation Setup", "Index", "AssetLocations")
                                     </li>
                                     <li>
-                                        @Html.ActionLink("AssetLocation Group", "Index", "AssetgroupSetup")
+                                        @Html.ActionLink("AssetLocation Group", "Index", "Assetgroups")
                                     </li>
 
                                     <li>
-                                        @Html.ActionLink("AssetLocation Manufecturer", "Index", "AssetManufacturerSetup")
+                                        @Html.ActionLink("AssetLocation Manufecturer", "Index", "AssetManufacturers")
                                     </li>
                                     <li>
-                                        @Html.ActionLink("Asset Model Setup", "Create", "assetModelSetup")
+                                        @Html.ActionLink("Asset Model Setup", "Create", "assetModels")
                                     </li>
 
                                 </ul>
@@ -297,7 +297,7 @@
                                     </li>*@
 
                                     <li>
-                                        @Html.ActionLink("OrganizationSetup", "Index", "OrganizationSetup")
+                                        @Html.ActionLink("OrganizationSetup", "Index", "Organizations")
                                     </li>
 
                                     @*<li>
@@ -305,7 +305,7 @@
                                     </li>*@
 
                                     <li>
-                                        @Html.ActionLink("BranchSetup", "Index", "BranchSetup")
+                                        @Html.ActionLink("BranchSetup", "Index", "Branchs")
                                     </li>
 
                                 </ul>
@@ -347,11 +347,17 @@
                                 <a href="#">Asset<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Asset Entry</a>
+                                        @*<a href="#">Asset Entry</a>*@
+                                        @Html.ActionLink("Asset Entry", "Create", "AssetEntrys")
                                     </li>
                                     <li>
-                                        <a href="#">Asset Edit</a>
-                                    </li>                                    
+                                        @*<a href="#">Asset Edit</a>*@
+                                        @Html.ActionLink("Asset Edit", "Edit", "AssetEntrys")
+                                    </li>          
+                                    <li>
+                                       
+                                        @Html.ActionLink("Asset Search", "Search", "AssetEntrys")
+                                    </li>                                  
                                 </ul>
 
                             </li>
@@ -362,10 +368,12 @@
                                 <a href="#">Check<span class="fa arrow"></span></a>
                                 <ul class="nav nav-third-level">
                                     <li>
-                                        <a href="#">Asset CheckOut</a>
+                                        @*<a href="#">Asset CheckOut</a>*@
+                                        @Html.ActionLink("Asset CheckOut", "Create", "CheekOuts")
                                     </li>
                                     <li>
-                                        <a href="#">Asset CheckIn</a>
+                                        @*<a href="#">Asset CheckIn</a>*@
+                                        @Html.ActionLink("Asset CheckIn", "Create", "CheekIns")
                                     </li>
                                 </ul>
 
@@ -375,7 +383,13 @@
                                                    
 
                             <li>
-                                <a href="#">Asset Audit</a>
+                                @*<a href="#">Asset Audit</a>*@
+                                @Html.ActionLink("Asset Audit", "Create", "AssetAudits")
+                            </li>
+
+                            <li>
+                                @*<a href="#">Asset Audit</a>*@
+                                @Html.ActionLink("Dash Board", "Index", "DashBoards")
                             </li>
 
                         </ul>
