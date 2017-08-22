@@ -18,10 +18,15 @@
     <!-- Google Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
     @RenderSection("styles", required: false)
+
+
+
+   
+
 </head>
 <body>
 
-    <div id="wrapper" style="overflow:hidden">
+<div id="wrapper" style="overflow:hidden">
         <nav class="navbar navbar-default top-navbar" role="navigation">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
@@ -426,7 +431,7 @@
         
 
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" style="min-height:none;">
+        <div id="page-wrapper" style="min-height: 0px;" >
 
             <div>
                 @RenderBody()
