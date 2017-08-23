@@ -19,7 +19,14 @@ namespace ATS.Controllers
 
             return View();
         }
-        //Green Rojhdkfjdhgjksedfdsf
+
+        public ActionResult Edit()
+        {
+
+
+            return View();
+        }
+
 
     }
 
