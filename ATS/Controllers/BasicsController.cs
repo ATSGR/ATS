@@ -28,6 +28,13 @@ namespace ATS.Controllers
         }
 
 
+        public ActionResult Delete()
+        {
+
+            return View();
+        }
+
+
     }
 
 }
