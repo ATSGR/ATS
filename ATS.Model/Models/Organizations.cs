@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace ATS.Model.Models
@@ -15,6 +16,8 @@ namespace ATS.Model.Models
         public DateTime CreatedOn { get; set; }
         public string ModefiedBy { get; set; }
         public DateTime ModefiedOn { get; set; }
+        //here is icollection for brances..
+        public virtual ICollection<Branchs> Branchses { get; set; }
 
 
 
