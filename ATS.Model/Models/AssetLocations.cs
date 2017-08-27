@@ -7,23 +7,24 @@ using System.Threading.Tasks;
 
 namespace ATS.Model.Models
 {
-    class Branchs
+    class AssetLocations
     {
         public long Id { get; set; }
-        [Display(Name = "Branch Name")]
-        [Required(ErrorMessage = "Branch Name")]
-        public string Name { get; set; }
-        public string ShortName { get; set; }
-        //forign key from organization table..
+        //forign key form organization model or table
         [Display(Name = "Organization")]
         public long OrganizationsId { get; set; }
+        //forign key from branchs model class or table
+        [Display(Name = "Branch")]
+        public long BranchsId { get; set; }
+        [Display(Name = "Name")]
+        [Required(ErrorMessage = "Name is required")]
+        public string Name { get; set; }
+        public string ShortName { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
-        public string ModefidBy { get; set; }
+        public string ModefiedBy { get; set; }
         public DateTime ModefiedOn { get; set; }
         public virtual Organizations Organizations { get; set; }
-        //collection for asset locations
-        public virtual ICollection<AssetLocations> AssetLocationses { get; set; }    
-
+        public virtual Branchs Branchs { get; set; }
     }
 }
