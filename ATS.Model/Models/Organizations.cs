@@ -18,8 +18,7 @@ namespace ATS.Model.Models
         public DateTime ModefiedOn { get; set; }
         //here is icollection for brances..
         public virtual ICollection<Branchs> Branchses { get; set; }
-
-
-
+        //icollection for asset locations
+        public virtual ICollection<AssetLocations> AssetLocationses { get; set; }
     }
 }

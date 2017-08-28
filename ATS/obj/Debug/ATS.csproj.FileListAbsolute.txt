@@ -245,3 +245,40 @@ E:\ATS22.08.17\ATS\bin\System.Web.Mvc.xml
 E:\ATS22.08.17\ATS\obj\Debug\ATS.dll
 E:\ATS22.08.17\ATS\obj\Debug\ATS.pdb
 E:\ATS22.08.17\ATS\obj\Debug\ATS.csprojResolveAssemblyReference.cache
+D:\Self Project\ATS\ATS\bin\ATS.dll.config
+D:\Self Project\ATS\ATS\bin\ATS.dll
+D:\Self Project\ATS\ATS\bin\ATS.pdb
+D:\Self Project\ATS\ATS\bin\ATS.BLL.dll
+D:\Self Project\ATS\ATS\bin\ATS.DAL.dll
+D:\Self Project\ATS\ATS\bin\ATS.Model.dll
+D:\Self Project\ATS\ATS\bin\ATS.Reporting.dll
+D:\Self Project\ATS\ATS\bin\ATS.UiUtility.dll
+D:\Self Project\ATS\ATS\bin\EntityFramework.dll
+D:\Self Project\ATS\ATS\bin\EntityFramework.SqlServer.dll
+D:\Self Project\ATS\ATS\bin\Json.dll
+D:\Self Project\ATS\ATS\bin\Microsoft.Web.Infrastructure.dll
+D:\Self Project\ATS\ATS\bin\Newtonsoft.Json.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Helpers.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Mvc.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Razor.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.Deployment.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.dll
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.Razor.dll
+D:\Self Project\ATS\ATS\bin\ATS.BLL.pdb
+D:\Self Project\ATS\ATS\bin\ATS.DAL.pdb
+D:\Self Project\ATS\ATS\bin\ATS.Model.pdb
+D:\Self Project\ATS\ATS\bin\ATS.Reporting.pdb
+D:\Self Project\ATS\ATS\bin\ATS.UiUtility.pdb
+D:\Self Project\ATS\ATS\bin\EntityFramework.xml
+D:\Self Project\ATS\ATS\bin\EntityFramework.SqlServer.xml
+D:\Self Project\ATS\ATS\bin\Json.pdb
+D:\Self Project\ATS\ATS\bin\Newtonsoft.Json.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Razor.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.Deployment.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Webpages.Razor.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Helpers.xml
+D:\Self Project\ATS\ATS\bin\System.Web.Mvc.xml
+D:\Self Project\ATS\ATS\obj\Debug\ATS.csprojResolveAssemblyReference.cache
+D:\Self Project\ATS\ATS\obj\Debug\ATS.dll
+D:\Self Project\ATS\ATS\obj\Debug\ATS.pdb
