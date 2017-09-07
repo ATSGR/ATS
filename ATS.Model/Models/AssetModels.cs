@@ -7,27 +7,27 @@ using System.Threading.Tasks;
 
 namespace ATS.Model.Models
 {
-    class AssetManufacturers
+    class AssetModels
     {
+
         public long Id { get; set; }
+        [Display(Name = "Asset Manufacture")]
+        public long AssetManufacturersId { get; set; }
+        public virtual AssetManufacturers AssetManufacturers { get; set; }
         [Display(Name = "Asset Group")]
-        [Required]
         public long AssetGroupsId { get; set; }
         public virtual AssetGroups AssetGroups { get; set; }
-        [Display(Name ="Name")]
-        [Required(ErrorMessage = "Asset name is required")]
+        [Required]
         public string Name { get; set; }
         [Display(Name = "Short Name")]
-        [Required(ErrorMessage = "Short Name is required")]
+        [Required(ErrorMessage = "Short name is required")]
         public string ShortName { get; set; }
-        [Display(Name = "Code")]
-        [Required]
         public string Code { get; set; }
         public string Description { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public string ModefiedBy { get; set; }
         public DateTime ModefiedOn { get; set; }
-
+      
     }
 }

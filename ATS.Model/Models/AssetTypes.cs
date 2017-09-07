@@ -18,6 +18,7 @@ namespace ATS.Model.Models
         public string ShortName { get; set; }
         [Display(Name = "Code")]
         public string Code { get; set; }
+        public virtual ICollection<AssetGroups> AssetGroupses { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public string ModefiedBy { get; set; }

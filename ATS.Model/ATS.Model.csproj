@@ -55,6 +55,7 @@
     <Compile Include="Models\AssetGroups.cs" />
     <Compile Include="Models\AssetLocations.cs" />
     <Compile Include="Models\AssetManufacturers.cs" />
+    <Compile Include="Models\AssetModels.cs" />
     <Compile Include="Models\AssetTypes.cs" />
     <Compile Include="Models\Branchs.cs" />
     <Compile Include="Models\Organizations.cs" />
