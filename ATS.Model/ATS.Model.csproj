@@ -60,6 +60,7 @@
     <Compile Include="Models\Branchs.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\Organizations.cs" />
+    <Compile Include="Models\Vendors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
