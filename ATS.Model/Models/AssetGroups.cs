@@ -18,9 +18,12 @@ namespace ATS.Model.Models
         [Required(ErrorMessage = "Short Name is required")]
         public string ShortName { get; set; }
         public string Code { get; set; }
+        public virtual AssetTypes AssetTypes { get; set; }
+        public virtual ICollection<AssetManufacturers> AssetManufacturerses { get; set; }
         public string CreatedBy { get; set; }
         public DateTime CreatedOn { get; set; }
         public string ModefiedBy { get; set; }
         public DateTime ModefiedOn { get; set; }
     }
 }
+
