@@ -12,13 +12,14 @@ namespace ATS.Model.Models
         [Required(ErrorMessage = "Organization name is required.")]
         public string Name { get; set; }
         public string Location { get; set; }
-        public string CreatedBy { get; set; }
-        public DateTime CreatedOn { get; set; }
-        public string ModefiedBy { get; set; }
-        public DateTime ModefiedOn { get; set; }
         //here is icollection for brances..
         public virtual ICollection<Branchs> Branchses { get; set; }
         //icollection for asset locations
         public virtual ICollection<AssetLocations> AssetLocationses { get; set; }
+        public virtual ICollection<Employees> Employeeses { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+        public string ModefiedBy { get; set; }
+        public DateTime ModefiedOn { get; set; }
     }
 }

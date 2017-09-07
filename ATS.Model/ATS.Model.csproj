@@ -58,6 +58,7 @@
     <Compile Include="Models\AssetModels.cs" />
     <Compile Include="Models\AssetTypes.cs" />
     <Compile Include="Models\Branchs.cs" />
+    <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\Organizations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

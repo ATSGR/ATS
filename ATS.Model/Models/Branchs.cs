@@ -23,7 +23,8 @@ namespace ATS.Model.Models
         public DateTime ModefiedOn { get; set; }
         public virtual Organizations Organizations { get; set; }
         //collection for asset locations
-        public virtual ICollection<AssetLocations> AssetLocationses { get; set; }    
+        public virtual ICollection<AssetLocations> AssetLocationses { get; set; }
+        public virtual ICollection<Employees> Employeeses { get; set; }
 
     }
 }
